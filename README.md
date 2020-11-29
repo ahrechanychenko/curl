@@ -5,7 +5,7 @@ Status of Last Deployment:<br>
 
 An example of baking a static linked curl linux binary into a container alone with nothing else
 
-To run this demo execute `./demo.sh` and follow along with the output
+To run this demo execute `./test.sh` and follow along with the output
 
 Check the size of the resultant docker image:
 `docker images curl-static`
