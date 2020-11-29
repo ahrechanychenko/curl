@@ -19,4 +19,4 @@ Remove all `<empty>` images
 
 ```bash
 docker image prune
-```
+``` 
