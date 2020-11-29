@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 echo 0. Build our build environment and produce image with standalone executable:
 docker build -f build/Dockerfile build -t curl-static
 
