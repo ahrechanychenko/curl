@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  ftpd_server:
+    image: stilliard/pure-ftpd
+    container_name: ftpd_test
+    ports:
+      - "21:21"
+      - "30000-30009:30000-30009"
+    volumes:
+      - "$PWD:/home/test/"
+    environment:
+      PUBLICHOST: "localhost"
+      FTP_USER_NAME: test
+      FTP_USER_PASS: test_pass
+      FTP_USER_HOME: /home/test
+
+  httpd_server:
+    image: httpd:2.4
+    container_name: httpd_test
+    ports:
+    - "8080:80"
+    volumes:
+      - $PWD/test_data/website/:/usr/local/apache2/htdocs/
