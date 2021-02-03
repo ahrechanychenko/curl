@@ -6,3 +6,5 @@ docker-compose up -d
 
 pip3 install pytest lxml BeautifulSoup4
 python3 -m pytest -v tests
+
+echo 2. Done
