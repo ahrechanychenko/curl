@@ -14,3 +14,5 @@ python3 -m pytest -v tests
 echo 3. Clean-up
 docker-compose kill
 docker-compose down
+
+echo 4. Done
