@@ -10,13 +10,17 @@ on:
     tags:
       - v*
 
-  # Run tests for any PRs.
-  pull_request:
-
 env:
   IMAGE_NAME: curl
 
 jobs:
+  linter:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+        - uses: actions/checkout@v2
+        - uses: docker://github/super-linter:v2.1.0
+   
   # Run tests.
   test:
     runs-on: ubuntu-latest
