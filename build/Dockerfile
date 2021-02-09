@@ -9,7 +9,7 @@ RUN apk --no-cache add gcc \
                        openssl-dev \
                        openssl-libs-static \
                        file \
-                       git0 \
+                       git \
                        autoconf \
                        automake \
                        libtool \
