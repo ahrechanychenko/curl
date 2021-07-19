@@ -1,5 +1,6 @@
 # curl static as a docker image
 
+
 Status of Last Deployment:<br>
 <img src="https://github.com/ahrechanychenko/curl/workflows/Docker-CI-pipeline/badge.svg?"><br>
 
